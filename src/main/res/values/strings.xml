@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >Guild Wars 2 Event Viewer</string>
+    <string name="action_settings" >Settings</string>
+
+    <string name="mainmenu_selectzone">Select Zone</string>
+    <string name="mainMenu_majorevents">Major Events</string>
+    <string name="mainmenu_selecthomeworld">Select Home World</string>
+    <string name="mainmenu_options">Options</string>
+    <string name="mainmenu_homeworldcaption">Home World:</string>
+
+    <string name="selecthomeworld_title">Select Home World</string>
+
+    <string name="selectzone_title">Select Zone</string>
+
+    <string name="eventlist_title">Event List</string>
+
+</resources>
