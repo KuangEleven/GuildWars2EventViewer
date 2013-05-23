@@ -29,7 +29,7 @@ public class SelectZone extends ListActivity {
         MapName mapName = (MapName) getListAdapter().getItem(position);
         Intent i = new Intent(this, EventList.class);
         Bundle bundle = new Bundle();
-        bundle.putInt("id", mapName.getId());
+        bundle.putInt("mapID", mapName.getId());
         i.putExtras(bundle);
         startActivity(i);
     }

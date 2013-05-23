@@ -27,7 +27,7 @@ public class MainMenu extends Activity implements View.OnClickListener {
         setContentView(R.layout.mainmenu);
 
         findViewById(R.id.selectzone).setOnClickListener(this);
-        //findViewById(R.id.majorevents).setOnClickListener(this);
+        findViewById(R.id.majorevents).setOnClickListener(this);
         findViewById(R.id.selecthomeworld).setOnClickListener(this);
         findViewById(R.id.options).setOnClickListener(this);
 
@@ -101,15 +101,17 @@ public class MainMenu extends Activity implements View.OnClickListener {
                 intent = new Intent(this, SelectZone.class);
                 startActivity(intent);
                 break;
-            //case R.id.majorevents:
-                //intent = new Intent(this, ShoppingList.class);
-                //startActivity(intent);
-                //break;
+            case R.id.majorevents:
+                intent = new Intent(this, MajorEvents.class);
+                startActivity(intent);
+                break;
             case R.id.selecthomeworld:
                 intent = new Intent(this, SelectHomeWorld.class);
                 startActivity(intent);
                 break;
             case R.id.options:
+                intent = new Intent(this, Options.class);
+                startActivity(intent);
                 break;
         }
     }

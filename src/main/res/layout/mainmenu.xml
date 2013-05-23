@@ -26,18 +26,18 @@
             android:layout_height="wrap_content"
             android:text="@string/mainmenu_selectzone"
             android:layout_below="@id/homeworld_caption"/>
-<!--    <Button
+    <Button
             android:id="@+id/majorevents"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mainMenu_majorevents"
-            android:layout_below="@id/selectzone" />-->
+            android:layout_below="@id/selectzone" />
     <Button
             android:id="@+id/selecthomeworld"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mainmenu_selecthomeworld"
-            android:layout_below="@id/selectzone" />
+            android:layout_below="@id/majorevents" />
     <Button
             android:id="@+id/options"
             android:layout_width="wrap_content"

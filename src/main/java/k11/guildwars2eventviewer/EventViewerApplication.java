@@ -33,6 +33,16 @@ public class EventViewerApplication extends Application {
         return homeWorld;
     }
 
+    public void setRefresh(Integer refresh) {
+        SharedPreferences.Editor ed = getSharedPreferences("GW2EventViewer",MODE_PRIVATE).edit();
+        ed.putInt("Refresh", refresh);
+        ed.commit();
+    }
+
+    public Integer getRefresh() {
+        return getSharedPreferences("GW2EventViewer",MODE_PRIVATE).getInt("Refresh", 30);
+    }
+
     public ArrayList<EventName> getEventNames() {
         return eventNames;
     }

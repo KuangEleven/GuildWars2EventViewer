@@ -16,4 +16,9 @@
 
     <string name="eventlist_title">Event List</string>
 
+    <string name="options_title">Options</string>
+    <string name="options_refresh_label">Auto Refresh Interval (sec)</string>
+
+    <string name="majorevents_title">Major Events</string>
+
 </resources>

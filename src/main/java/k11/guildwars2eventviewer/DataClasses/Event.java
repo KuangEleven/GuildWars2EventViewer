@@ -110,6 +110,16 @@ public class Event {
         this.state = state;
     }
 
+    static public Event findEvent(ArrayList<Event> eventList, String eventID, EventViewerApplication application) {
+        Integer size = eventList.size();
+        for (int i=0;i<size;i++) {
+            if (eventList.get(i).getEventName(application).getId().equals(eventID)) {
+                return eventList.get(i);
+            }
+        }
+        return null;
+    }
+
     public void parseJSON(JSONObject jsonObject) throws JSONException, ParseException {
         state = jsonObject.getString("state");
         eventName.setId(jsonObject.getString("event_id"));
