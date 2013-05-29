@@ -224,9 +224,14 @@ public class MajorEvents extends ListActivity {
         if (currentID.equals(eventID)) {
             Integer size = prereqList.size();
             for (int i=0;i<size;i++) {
-                Event prereqEvent = Event.findEvent(eventList,prereqList.get(i),application);
-                if (prereqEvent.getState().equals(Event.ACTIVE) || prereqEvent.getState().equals(Event.PREPARATION)) {
-                    textView.setBackgroundColor(Color.argb(64, 255, 255, 128)); //Yellow
+                try {
+                    Event prereqEvent = Event.findEvent(eventList,prereqList.get(i),application);
+                    if (prereqEvent.getState().equals(Event.ACTIVE) || prereqEvent.getState().equals(Event.PREPARATION)) {
+                        textView.setBackgroundColor(Color.argb(64, 255, 255, 128)); //Yellow
+                    }
+                }
+                catch (Exception e) {
+                    //Do nothing
                 }
             }
         }

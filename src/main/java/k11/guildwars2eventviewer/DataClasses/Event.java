@@ -110,14 +110,14 @@ public class Event {
         this.state = state;
     }
 
-    static public Event findEvent(ArrayList<Event> eventList, String eventID, EventViewerApplication application) {
+    static public Event findEvent(ArrayList<Event> eventList, String eventID, EventViewerApplication application) throws Exception {
         Integer size = eventList.size();
         for (int i=0;i<size;i++) {
             if (eventList.get(i).getEventName(application).getId().equals(eventID)) {
                 return eventList.get(i);
             }
         }
-        return null;
+        throw new Exception("Event not found");
     }
 
     public void parseJSON(JSONObject jsonObject) throws JSONException, ParseException {
